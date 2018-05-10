@@ -34,28 +34,34 @@ h1{
 }
 
 .tituloComic{
-  width: 100%;
-  border: none;
-  text-align: center;
-  padding: 15px 0px;
+ text-align: center;
+ height: 25px;
 }  
+
+.contImg{
+  width: 100%;
+  height: 200px;
+}
 
 .imgComic{
   width: 100%;
-  height: 70%;
+  height: 100%;
 }
 
 .infoComic{
-  padding: 10px;
+  padding: 7px;
+  height: 19px;
   border: 1px solid;
 }
 
 .fechaComic{
+  display: inline-block;
+  width: 20%;
   text-align: center;
-    margin-left: 10%;
-    width: 20%;
-    margin-right: 30%;
-    border: none;
+  margin-left: 10%;
+  margin-right: 30%;
+  border: none;
+  margin-top: 0%;
 }
 
 .numLikes{

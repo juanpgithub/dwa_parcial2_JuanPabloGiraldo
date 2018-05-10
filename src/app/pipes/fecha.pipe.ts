@@ -1,10 +1,10 @@
 import { Pipe, PipeTransform } from "@angular/core";
 
 @Pipe ({
-    name: 'titulocomic'
+    name: 'fechacomic'
 })
 
-export class TituloPipe implements PipeTransform {
+export class FechaPipe implements PipeTransform {
     transform(titulo:string){
         var caracter = 0;
         for(var i=0;i<titulo.length;i++){
@@ -13,9 +13,7 @@ export class TituloPipe implements PipeTransform {
                 break;
             }
         }
-        return titulo.substr(0,caracter);
-        // var fecha = titulo.substr(caracter+1,4);
-        
+        return titulo.substr(caracter+1,4);
     }
 }
     
