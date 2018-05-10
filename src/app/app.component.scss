@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "HeroRegular";
+    src: url("../fonts/hero-regular/hero-regular.eot");
+    src: url("../fonts/hero-regular/hero-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/hero-regular/hero-regular.woff") format("woff"), url("../fonts/hero-regular/hero-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  } 
+  
+  main.mainCont {
+      padding: 0;
+      margin: 0;
+      position: relative;
+      overflow: hidden;
+      font-family: 'HeroRegular';
+  }
