@@ -5,7 +5,7 @@
 <div class="searchCont">
   <div *ngIf="lista_comics">
     <div class="searchCont">
-    Search: <input type="text" [(ngModel)]="filterText">
+    Search: <input type="text" class="buscador" [(ngModel)]="filterText">
     </div> 
     <div class="cuadroComic" *ngFor="let comic of lista_comics | filter:filterText; let i = index">
         <h4 class="tituloComic">{{comic.title | titulocomic }}</h4>
@@ -13,7 +13,7 @@
             <img class="imgComic" src="{{comic.thumbnail.path}}.jpg" readonly="true">
         </div>
         <div class="infoComic"> 
-          <h5 class="fechaComic">{{comic.title | fechacomic }}</h5>
+          <h5 class="fechaComic">Fecha: {{comic.title | fechacomic }}</h5>
           <input type="text" class="numLikes" value={{likes_comics[i]}} readonly="true">
           <button (click)="gestionarLike(i, true)">:)</button>
           <button (click)="gestionarLike(i, false)">:(</button>
@@ -22,19 +22,6 @@
   </div>
 </div>
 
-<!-- <div *nfIf="lista_comics"> -->
-  <div class="cuadroComic" *ngFor="let comic of lista_comics;let i=index">
-    <!-- <input type="text" class="tituloComic" value={{comic.title | titulo-comic}} readonly="true"> -->
-    <!-- <h3>{{comic.title | titulocomic }}</h3> -->
-    <img class="imgComic" src="{{comic.thumbnail.path}}.jpg" readonly="true">
-    <div class="infoComic">
-        <input type="text" class="fechaComic" value="2020" readonly="true">
-        <input type="text" class="numLikes" value={{likes_comics[i]}} readonly="true">
-        <button (click)="gestionarLike(i, true)">:)</button>
-        <button (click)="gestionarLike(i, false)">:(</button>
-    </div>
-  </div>
-<!-- </div> -->
 
 
   
