@@ -9,13 +9,15 @@ import { FilterPipe } from './pipes/filter.pipe';
 
 import { AppComponent } from './app.component';
 import { ListacomicsComponent } from './listacomics/listacomics.component';
+import { TituloPipe } from './pipes/titulo.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ListacomicsComponent,
-    FilterPipe
+    FilterPipe,
+    TituloPipe
   ],
   imports: [
     BrowserModule,
